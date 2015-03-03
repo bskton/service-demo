@@ -97,7 +97,7 @@ public class MyService extends BackgroundService {
                 SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMyy");
                 date = dateFormat.format(new Date());
                 satellites = String.format("%02d", 5);
-                //throw new Exception("Have no known location.");
+                throw new Exception("Have no known location.");
             }
 
             HttpGet httpget = new HttpGet();
